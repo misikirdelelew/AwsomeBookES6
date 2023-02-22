@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  box-shadow: 4px 4px rgb(10, 10, 10);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.line {
+  width: 25%;
+  height: 5px;
+  margin-bottom: 20px;
+}
+
+/* Header */
+
+#header {
+  border: 2px solid black;
+  padding: 10px;
+  box-shadow: 5px 0 gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  border-left: 2px solid black;
+  padding: 0 25px;
+  text-align: center;
+}
+
+nav a:nth-child(1) {
+  border: none;
+}
+
+#showdate {
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 20px 50px;
+}
+
+/* Books section */
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.book > p {
+  padding: 5px 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.book > button {
+  padding: 5px 10px;
+}
+
+.book:nth-child(odd) {
+  background-color: rgb(209, 208, 208);
+}
+
+#bk-container {
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  padding: 0 20px 20px 20px;
+  margin: 40px auto;
+  max-height: 45vh;
+  overflow-y: auto;
+}
+
+#bk-container > h2 {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+}
+
+#bk-container > p {
+  display: none;
+  padding: 10px;
+}
+
+#book_list {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+/* Add book form */
+
+#form_data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0;
+  align-items: center;
+  width: 400px;
+  margin: 2% auto;
+}
+
+#form_data > input {
+  font-size: 15px;
+  padding: 10px 15px;
+  width: 100%;
+  border: 3px solid black;
+  outline: none;
+}
+
+#form_data > button {
+  font-size: 15px;
+  padding: 5px 20px;
+  align-self: flex-end;
+}
+
+/* All sections */
+section {
+  display: none;
+}
+
+section:target {
+  display: flex;
+}
+
+#Contact {
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 2px 2px gray;
+  background-color: rgba(223, 221, 221, 0.7);
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  width: max-content;
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+#Contact > p {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+#Contact > ul {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  #header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}

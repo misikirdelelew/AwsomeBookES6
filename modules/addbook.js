@@ -5,12 +5,12 @@ const configureAddBooksForm = () => {
     .querySelector('#add_new_book_btn')
     .addEventListener('click', (event) => {
       event.preventDefault();
-      const addBookForm = document.forms.add_book_form;
-      const bookTitle = addBookForm.elements.title.value;
-      const bookAuthor = addBookForm.elements.author.value;
-      if (bookTitle.trim() !== '' && bookAuthor.trim() !== '') {
-        awesomeBooks.addBook(bookTitle, bookAuthor);
-        addBookForm.reset();
+      const AddFormData = document.forms.form_data;
+      const BTitle = AddFormData.elements.title.value;
+      const BAuthor = AddFormData.elements.author.value;
+      if (BTitle.trim() !== '' && BAuthor.trim() !== '') {
+        awesomeBooks.addBook(BTitle, BAuthor);
+        AddFormData.reset();
       }
     });
 };

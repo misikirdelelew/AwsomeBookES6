@@ -126,7 +126,7 @@ footer {
 
 /* Add book form */
 
-#add_book_form {
+#form_data {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -136,7 +136,7 @@ footer {
   margin: 2% auto;
 }
 
-#add_book_form > input {
+#form_data > input {
   font-size: 15px;
   padding: 10px 15px;
   width: 100%;
@@ -144,7 +144,7 @@ footer {
   outline: none;
 }
 
-#add_book_form > button {
+#form_data > button {
   font-size: 15px;
   padding: 5px 20px;
   align-self: flex-end;
